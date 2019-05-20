@@ -2,6 +2,8 @@
 @import "flash"; 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,600,700&display=swap');
 
+// Utility Classes - OVERRIDES 
+
 * {
   font-family: Comfortaa, Helvetica, sans-serif; 
   font-weight: bold;
@@ -16,7 +18,11 @@ body {
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.home-btn {
-  text-align: center; 
-  margin: 0 auto; 
+
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  text-transform: uppercase; 
 }
