@@ -1,0 +1,21 @@
+
+
+<h2 class="deep-purple-text text-darken-2 center-align  #bdbdbd grey lighten-1">Welcome! </h2>
+<hr>
+<div class="row">
+<%= link_to 'Add A Hobby', new_hobby_path, class: "btn deep- blue col s12" %>
+<br>
+<h3>Your Hobbies:</h3>
+<hr>
+<ul>
+  <% @hobbies.each do |h| %>
+  <li>
+  <h3><%= h.name%></h3>
+  </li>
+  <%= link_to "Edit", edit_hobby_path(h), class: "btn deep-purple"%> |
+  <%= link_to "Delete", hobby_path(h), method: :delete, class: "btn deep-purple"%> 
+  <hr>
+
+  <%end%>
+</ul>
+
